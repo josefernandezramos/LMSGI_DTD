@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg SYSTEM "Cataleg.dtd"> <!--validación del DTD-->
+
+<cataleg>
+    <llista_actors>
+        <actor id="a1">
+            <nom>Joan</nom>
+            <edat>35</edat>
+        </actor>
+        <actor id="a2">
+            <nom>Maria</nom>
+        </actor>
+        <actor id="a3">
+            <nom>Pere</nom>
+            <edat>40</edat>
+        </actor>
+    </llista_actors>
+    
+    <llista_pelicules>
+        <pelicula id="p1">
+            <titol idioma="ca">El viatge</titol>
+            <director>Anna</director>
+            <any>2020</any>
+            <actors>
+                <actor_ref ref="a1"/>
+                <actor_ref ref="a2"/>
+            </actors>
+        </pelicula>
+        <pelicula id="p2">
+            <titol idioma="es">El mundo</titol>
+            <director>Carles</director>
+            <any>2022</any>
+            <actors>
+                <actor_ref ref="a3"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+    
+    <llista_recomanacions_pelicules>
+        <recomanacio ref="p1"/>
+        <recomanacio ref="p2"/>
+    </llista_recomanacions_pelicules>
+</cataleg>
